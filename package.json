@@ -10,10 +10,14 @@
     "build": "babel src --out-dir lib",
     "prepublish": "npm run test && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xailabs/react-minscroll.git"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
+  "keywords": ["react"],
   "author": "Jovica Aleksic <jovica.aleksic@xailabs.de>",
   "license": "ISC",
   "peerDependencies": {
