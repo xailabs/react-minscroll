@@ -71,6 +71,9 @@ export default class MinScroll extends PureComponent {
         if (typeof value === 'number') {
             return value;
         }
+        if (typeof value === 'function') {
+            return this.toPixels(value());
+        }
         if (typeof value === 'string') {
             return this.toPixels(document.querySelector(value));
         }
