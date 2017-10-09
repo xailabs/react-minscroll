@@ -59,7 +59,7 @@ export default class MinScroll extends PureComponent {
     getIsBelowScroll() {
         const {minScroll, offset, offsetNegative} = this.props;
         if (!minScroll) return true;
-        return document.body.scrollTop > (
+        return document.documentElement.scrollTop > (
             this.toPixels(minScroll)
             + this.toPixels(offset)
             - this.toPixels(offsetNegative)
